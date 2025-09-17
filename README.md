@@ -4,16 +4,6 @@ This repository contains my personal curriculum vitae (CV) and related documents
 
 ---
 
-## 🧐 What is this?
-
-**edvinhubbyy/CV** is a simple repository for storing and sharing my CV in a digital format.  
-You’ll typically find:
-
-- My up-to-date CV (usually as a PDF or Markdown file)
-- Additional documents about my education, skills, and experience
-
----
-
 ## 💡 What does it do?
 
 - Acts as a single source of truth for my professional profile
