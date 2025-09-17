@@ -1,0 +1,340 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #202120 50%, #383838); /* Gradient similar to the header */
+    color: #c1c1c1;
+    background-color: #212529;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    overflow-x: hidden;
+}
+.about-section{
+    text-align: left;
+}
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    background-color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.container-fluid {
+    margin-top: 80pt;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link {
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #28e98c;
+    transform: scale(1.1);
+}
+
+/* Navbar menu */
+.navbar .menu {
+    display: flex;
+}
+
+/* Navbar logo */
+.navbar .logo {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #28e98c;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .logo:hover {
+    color: #28e98c;
+    transform: rotate(10deg);
+}
+
+/* Mobile navbar */
+.navbar.open {
+    display: block;
+}
+
+
+
+/* Navbar items on mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        display: none; /* Hidden by default */
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar .menu.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .navbar .hamburger {
+        display: flex; /* Show hamburger menu on mobile */
+    }
+    .navbar .nav-link {
+        
+        transition: none;
+    }
+    
+    .navbar .nav-link:hover {
+        transform:none;
+    }
+    .navbar .nav-link:hover {
+        color:#f1ffff;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 120px 30px; /* Increase padding at the top */
+        height: auto;
+    }
+
+    header h1 {
+        margin-top: 50px; /* Add more space above the "About Me" title */
+        font-size: 1.5rem;
+    }
+    .hello{
+        font-size: 20pt;
+        bottom: 20pt;
+        position: relative;
+    }
+
+    .intro-text {
+        position: relative;
+        bottom: 20pt;
+        margin-top: 2px; /* Add space between the title and the text beneath */
+        font-size: 1rem;
+    }
+    .about-section{
+        margin-top: 50pt;
+        text-align: center;
+    }
+
+    .profile-box {
+        margin-top: -60px; /* Push the entire box further down */
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    padding: 100px 20px 50px;
+    text-align: center;
+    flex-shrink: 0;
+    height: 600px;
+    margin-bottom: 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-box {
+    background-color: #303030;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.intro-text {
+    font-size: 1.125rem;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
+header p {
+    margin: 20px 0;
+    font-size: 1.25rem;
+}
+
+/* Learn More Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Initial smaller padding */
+    margin-top: 20px;
+    background-color: #28e98c;
+    color: #202120;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease; /* Smooth transition for scaling */
+}
+
+.btn:hover {
+    transform: scale(1.2); /* Scales the button to 110% of its original size */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6); /* Increase the shadow when hovered */
+    background-color: #28e98c;
+    color: #202120;
+}
+
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+}
+
+.social-icons i {
+    font-size: 2rem;
+    color: #28e98c;
+    transition: transform 0.2s ease;
+    margin: 0 25px;
+}
+
+.social-icons i:hover {
+    transform: scale(1.18);
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer p {
+    color: #bbb;
+    font-size: 1em;
+    margin: 0;
+}
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    
+    header {
+        padding: 80px 20px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .profile-box {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .social-icons {
+        flex-wrap: nowrap;
+    }
+
+    .social-icons i {
+        margin: 0 15px;
+    }
+
+    .btn {
+        width: 70%;
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .profile-box {
+        padding: 15px;
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}

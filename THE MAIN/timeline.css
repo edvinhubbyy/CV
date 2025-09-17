@@ -1,0 +1,364 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#1a1a1a;
+    color: #fff;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding-top: 70px;
+}
+
+/* Timeline title */
+.timeline-title {
+    font-size: 40px;
+    color: #f4b400;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    left: 20px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    background-color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    margin-top: 80pt;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    margin: 0px 16px 0px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link {
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0px 0px 0px 20px;
+}
+
+.navbar .nav-link:hover {
+    color: #f4b400;
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        display: none; /* Hidden by default */
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar .menu.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .navbar .hamburger {
+        display: flex; /* Show hamburger menu on mobile */
+    }
+    .navbar .nav-link {
+        
+        transition: none;
+    }
+    
+    .navbar .nav-link:hover {
+        transform:none;
+        color:#f1ffff;
+    }
+
+    
+}
+
+.section-title {
+    font-size: 2em;  /* Reduced font size */
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #f4b400;
+    text-align: center;
+}
+/* Timeline container */
+.timeline-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 25px;
+}
+/* Timeline styling */
+.timeline {
+    position: relative;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+/* Timeline item style */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100px); /* Starts below the viewport */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth fade-in and move-up effect */
+    margin-bottom: 60px;
+    position: relative;
+}
+
+/* When the item becomes visible, it fades in and moves into view */
+.timeline-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Timeline line */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #f4b400;
+    transform: translateX(-50%);
+}
+
+/* Timeline dot style */
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f4b400;
+    margin-right: 30px;
+    position: relative;
+    z-index: 2;
+    opacity: 0; /* Initially hidden */
+    transform: scale(0); /* Initially smaller */
+    transition: opacity 0.5s ease-out, transform 0.5s ease; /* Smooth animation */
+}
+
+/* Timeline content box style */
+.timeline-content {
+    background-color: #333;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading style */
+.timeline-heading {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Description style */
+.timeline-description {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+#githubLink{
+    color: #f4b400;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    .timeline-title {
+        font-size: 40px;
+        color: #f4b400;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 50px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        left: 0px;
+        bottom: 25pt;
+    }
+
+    /* Adjust timeline items */
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    /* Remove the timeline dots on mobile */
+    .timeline-dot {
+        display: none; /* Remove dots on mobile */
+    }
+
+    /* Center timeline dots above the content on mobile */
+    .timeline-item {
+        position: relative;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -30px; /* Adjust the vertical position */
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #f4b400;
+        transform: translateX(-50%);
+    }
+
+    /* Adjust timeline content */
+    .timeline-content {
+        width: 90%;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+/* Webkit scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #202120;
+    border-radius: 10px;
+    position:absolute;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f4b400;
+    border-radius: 10px;
+    border: 3px solid #202120;
+    position:absolute;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e0a800;
+    position:absolute;
+
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #202120;
+    position:absolute;
+
+}
+
+/* Optional: Firefox scrollbar styling */
+scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+scrollbartrack {
+    background-color: #202120;
+}
+
+scrollbarthumb {
+    background-color: #f4b400;
+    border-radius: 10px;
+}
+
+scrollbarthumb:hover {
+    background-color: #e0a800;
+}
+
+/* Fix layout issues in mobile */
+body, html {
+    overflow-x: hidden; /* Disable horizontal scrolling on mobile */
+}
+
+/* Contact section */
+.contact {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Contact heading */
+.contact h2 {
+    font-size: 30px;
+    color: #f4b400;
+    margin-bottom: 20px;
+}
+
+/* Contact text */
+.contact p {
+    font-size: 18px;
+    color: #ccc;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    word-wrap: break-word; /* Ensures the text wraps inside container */
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer p {
+    color: #bbb;
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Responsive styles for contact section */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+
+    .contact p {
+        font-size: 16px; /* Smaller text for mobile */
+        padding: 0 15px; /* Padding for better spacing */
+        max-width: 100%; /* Ensure the text doesn't overflow */
+    }
+}
