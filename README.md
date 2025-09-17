@@ -23,7 +23,7 @@ This repository contains my personal CV and related documents. It serves as a ce
 
 Want to connect or learn more?  
 - GitHub: [@edvinhubbyy](https://github.com/edvinhubbyy)
-- Email: [Gmail](metodievivan499@gmail.com)
+- Email: metodievivan499@gmail.com
 
 ---
 
