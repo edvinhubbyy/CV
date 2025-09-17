@@ -1,6 +1,6 @@
 # 📄 CV Repository
 
-This repository contains my personal curriculum vitae (CV) and related documents. It serves as a central place for sharing my professional resume and background with employers, collaborators, or anyone interested in learning more about my experience.
+This repository contains my personal CV and related documents. It serves as a central place for sharing my professional resume and background, collaborators, or anyone interested in learning more about Me.
 
 ---
 
@@ -12,28 +12,18 @@ This repository contains my personal curriculum vitae (CV) and related documents
 
 ---
 
-## 🗂️ Contents
-
-- `CV.pdf` — My current CV
-- Other supporting files (education, skills, portfolio, etc.)
-
----
-
 ## 📥 How to use
 
 - **If you’re a recruiter or collaborator:**  
-  Download or view `CV.pdf` for my latest resume.
-
-- **If you’re me:**  
-  Update the CV file and supporting documents as needed.
-
+  Click the link in description or view `CV.pdf` for my resume.
+  
 ---
 
 ## 📬 Contact
 
 Want to connect or learn more?  
 - GitHub: [@edvinhubbyy](https://github.com/edvinhubbyy)
-- Email: Add your email here!
+- Email: [Gmail](metodievivan499@gmail.com)
 
 ---
 
